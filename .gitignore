@@ -1,0 +1,38 @@
+# --- 1. Pythonのコンパイル済みファイル（ゴミ） ---
+__pycache__/
+*.py[cod]
+
+# --- 2. 仮想環境（絶対に入れない！） ---
+# 自分のPC環境のフォルダなので、他人には不要
+.venv/
+venv/
+env/
+
+# --- 3. Jupyter Notebookの自動バックアップ（ゴミ） ---
+.ipynb_checkpoints/
+
+# --- 4. データセット・巨大ファイル（最重要！） ---
+# ここにある拡張子はGitに無視させる
+*.csv
+*.tsv
+*.json
+*.xlsx
+*.zip
+*.tar.gz
+*.pkl
+*.parquet
+
+# --- 5. 学習済みモデル（重い！） ---
+# 数百MB〜数GBになるので無視する
+*.h5
+*.pth
+*.pt
+*.onnx
+*.safetensors
+
+# --- 6. OSの自動生成ファイル（ゴミ） ---
+.DS_Store
+Thumbs.db
+
+# --- 7. VS Codeの設定（個人設定） ---
+.vscode/
